@@ -1,0 +1,31 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 2.5px 10px;
+  align-items: center;
+}
+
+.header a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-contact{
+  font-weight: 300;
+  font-size: large;
+  text-decoration: underline;
+  padding-right: 20px;
+}
+.nav-title{
+  font-size: xxx-large;
+  font-weight: bolder;
+  padding-left: 20px;
+  letter-spacing: -3px;
+}
+
+.nav-border{
+  border-bottom: 2px solid #cecece;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
