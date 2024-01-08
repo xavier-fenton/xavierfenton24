@@ -1,5 +1,12 @@
 ---
 import '../styles/content.css'
+
+import { sanityClient } from "sanity:client";
+
+const posts = await sanityClient.fetch(`*[_type == "posts"]`);
+
+
+
 ---
 
 
@@ -8,7 +15,9 @@ import '../styles/content.css'
   <div class="custom-block-wrapper">
     <img class="custom-block-display-image" src="/noimage.jpg"></img>
     <div class="custom-block-title-and-content-wrapper">
-        <div class="custom-block-title">Title here</div>
+      {posts.map((posts) => { // this map will expand to the image tag once configured properly
+        return <div class="custom-block-title">{posts.name}</div>
+      })}
         <div class="custom-block-content">Content here</div>
     </div>
   </div>
