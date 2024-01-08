@@ -3,22 +3,48 @@ import '../styles/content.css'
 
 import { sanityClient } from "sanity:client";
 
+
+import imageUrlBuilder from '@sanity/image-url'
+
+// Get a pre-configured url-builder from your sanity client
+const builder = imageUrlBuilder(sanityClient)
+
+function urlFor(source) {
+  return builder.image(source)
+}
+
 const posts = await sanityClient.fetch(`*[_type == "posts"]`);
-
-
 
 ---
 
 
 <div class="content-main-wrapper">
   <div class="content-page-title">Work</div>
-  <div class="custom-block-wrapper">
-    <img class="custom-block-display-image" src="/noimage.jpg"></img>
-    <div class="custom-block-title-and-content-wrapper">
-      {posts.map((posts) => { // this map will expand to the image tag once configured properly
-        return <div class="custom-block-title">{posts.name}</div>
-      })}
-        <div class="custom-block-content">Content here</div>
-    </div>
-  </div>
+  {posts.map((posts: {title: string, href: string, _id: string, previewimage: any, content: any}) => {
+    
+
+     const content = posts.content.map((data) => {
+      return data.children.map((data) => data.text)
+     }) // maybe re-write this
+
+            return (
+            <div id={posts._id}>
+            <a class="custom-block-ahref" href={posts.href}>
+              <div class="custom-block-wrapper">
+                      <img class="custom-block-display-image" src={urlFor(posts.previewimage).url()}></img>
+                      <div class="custom-block-title-and-content-wrapper">
+                       <div class="custom-block-title">{posts.title}</div>
+                      
+                      
+                      
+                      
+                      <div class="custom-block-content">{content}</div>
+                      </div> 
+                  </div>
+                  </a>
+                  
+                  </div>
+                  )
+            
+            })}
 </div>

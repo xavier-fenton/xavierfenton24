@@ -8,6 +8,11 @@
   padding-left: 20px;
 }
 
+
+.custom-block-ahref{
+  text-decoration: none;
+  color: black;
+}
 .custom-block-wrapper{
   padding: 20px;
   display: flex;
@@ -17,9 +22,9 @@
 }
 
 .custom-block-display-image{
-  border: 0.5px #c4c0c073;
+  border: 1px solid #c4c0c073;
   height: 180px;
-  width: 250px;
+  width: auto;
   object-fit: cover;
 }
 
@@ -31,3 +36,4 @@
   padding-top: 10px;
 
 }
+
