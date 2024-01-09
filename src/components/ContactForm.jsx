@@ -43,7 +43,7 @@ export default function ContactForm() {
     <>
       <div className="contactpage-main-wrapper">
         <div className="contactform-main-wrapper">
-          <div ref={form} id="contact-form" onSubmit={sendEmail}>
+          <form ref={form} id="contact-form" onSubmit={sendEmail}>
             <div className="contact-me-title">Contact Me</div>
 
             <div className="contact-me-inputs">
@@ -71,7 +71,7 @@ export default function ContactForm() {
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
         <div
           className="email-sent-notification"
