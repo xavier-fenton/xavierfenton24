@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-border"></div>
       <div className="footer-content-wrapper">
         <div className="footer-title">
-          <div>2024</div>
+          <div>2024 ©</div>
           <span className="contact-underline">
             <a href="/contact">contact</a>
           </span>
