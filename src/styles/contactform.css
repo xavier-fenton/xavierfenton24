@@ -12,7 +12,6 @@ label{
 .contact-me-wrap{
   display: flex;
   flex-direction: column;
-  width: 1000px;
 }
 
 .contactform-main-wrapper{
@@ -20,12 +19,12 @@ label{
   flex-direction: column;
   padding: 20px;
   gap: 10px;
+  width: 500px;
 }
 
 .contact-me-labels{
   display: flex;
   padding-top: 10px ;
-  width: 500px
 }
 
 
@@ -72,7 +71,7 @@ label{
 
 @media (max-width: 540px)
 {
- .contact-me-labels{
+ .contactform-main-wrapper{
   width: auto;
  }
 }

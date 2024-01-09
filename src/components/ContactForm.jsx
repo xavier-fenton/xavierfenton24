@@ -42,11 +42,11 @@ export default function ContactForm() {
   return (
     <>
       <div className="contactpage-main-wrapper">
-        <form ref={form} id="contact-form" onSubmit={sendEmail}>
-          <div className="contactform-main-wrapper">
+        <div className="contactform-main-wrapper">
+          <div ref={form} id="contact-form" onSubmit={sendEmail}>
             <div className="contact-me-title">Contact Me</div>
 
-            <div className="contact-me-labels">
+            <div className="contact-me-inputs">
               <div className="contact-me-wrap">
                 <input type="hidden" name="contact_number" />
                 <label>Name</label>
@@ -72,7 +72,7 @@ export default function ContactForm() {
               </div>
             </div>
           </div>
-        </form>
+        </div>
         <div
           className="email-sent-notification"
           style={{ display: `${display}` }}

@@ -2,9 +2,17 @@
 import Nav from "../components/Nav.astro";
 import '../styles/index.css'
 import ContactForm from '../components/ContactForm.jsx'
-
+import Head from '../components/Head.astro'
 
 ---
-<Nav/>
 
-<ContactForm client:visible/>
+
+<Head/>
+<body>
+      <Nav />
+      <ContactForm client:visible/>
+</body>
+
+
+
+
