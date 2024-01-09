@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.0.9",
+    "@emailjs/browser": "^3.11.0",
     "@sanity/astro": "^2.2.0",
     "@sanity/client": "^6.10.0",
     "@sanity/image-url": "^1.0.2",

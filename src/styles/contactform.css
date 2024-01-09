@@ -1,0 +1,86 @@
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+label{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-me-wrap{
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.contactform-main-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+.contact-me-labels{
+  display: flex;
+  padding-top: 10px ;
+  width: 500px
+}
+
+
+.contact-me-title{
+ font-size: xx-large;
+ font-weight: 800;
+}
+
+.contact-message-textarea{
+  height: 250px;
+}
+.contactform-message-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+
+.submit{
+  margin-top: 10px;
+}
+
+
+.social-links-wrapper{
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.social-title{
+  font-size: medium;
+  font-weight: 600;
+}
+
+@media (max-width: 768px)
+{
+ .contactpage-main-wrapper{
+  flex-direction: column;
+ }
+}
+
+@media (max-width: 540px)
+{
+ .contact-me-labels{
+  width: auto;
+ }
+}
+
+.email-sent-notification{
+  font-size: small;
+  padding-left: 20px;
+  color: grey;
+  width: 77px;
+  text-decoration: underline;
+}
