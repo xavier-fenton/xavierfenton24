@@ -1,0 +1,36 @@
+
+.bio-main-wrap{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+.bio-title{
+  font-size: xx-large;
+  font-weight: 800;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+
+.bio-content{
+  padding: 10px;
+  
+}
+.bio-content p{
+  width: 650px;
+  padding-bottom: 10px;
+}
+
+.bio-content h2{
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 700px){
+
+  .bio-content p{
+    width: auto ;
+    
+  }
+
+}
