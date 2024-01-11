@@ -1,0 +1,25 @@
+---
+import '../styles/bio.css'
+import { sanityClient } from "sanity:client";
+import { PortableText } from "astro-portabletext";
+
+
+
+const contentData = await sanityClient.fetch(`*[_type == "biocontent"]`);
+// Keep working on styles that come from portable text component
+---
+
+<div class="bio-main-wrap">
+  {contentData.map((data) => {
+
+
+      
+
+    return(
+          <div class="bio-title">{data.title}</div>
+        <div class="bio-content-wrapper">
+          <div class="bio-content"><PortableText value={data.content}/></div>
+        </div>)
+  })}
+  
+</div>

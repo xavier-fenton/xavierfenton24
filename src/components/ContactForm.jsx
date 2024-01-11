@@ -48,24 +48,26 @@ export default function ContactForm() {
 
             <div className="contact-me-inputs">
               <div className="contact-me-wrap">
-                <input type="hidden" name="contact_number" />
                 <label>Name</label>
                 <input
                   className="contactform-inputs"
                   type="text"
                   name="user_name"
+                  required
                 />
                 <label>Email</label>
                 <input
                   className="contactform-inputs"
                   type="email"
                   name="user_email"
+                  required
                 />
                 <div className="contactform-message-wrapper">
                   <label>Message</label>
                   <textarea
                     className="contact-message-textarea"
                     name="message"
+                    required
                   ></textarea>
                   <input className="submit" type="submit" value="Send" />
                 </div>
