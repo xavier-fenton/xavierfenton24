@@ -55,3 +55,9 @@ table {
 body{
   font-family: 'Inter';
 }
+
+body, html {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
