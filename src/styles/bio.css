@@ -26,11 +26,14 @@
 .bio-content h2{
   padding-bottom: 10px;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
 
   .bio-content p{
     width: auto ;
     
+  }
+  .bio-main-wrap{
+    padding: 20px 0px 0px 20px;
   }
 
 }
