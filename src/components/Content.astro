@@ -19,9 +19,9 @@ const posts = await sanityClient.fetch(`*[_type == "posts"]`);
 <div class="content-main-wrapper">
   <div class="content-page-title">Work</div>
   <div class="content-page-content-wrapper">
-    {posts.map((posts: {title: string, href: string, _id: string, previewimage: any, content: any}) => {
-      
+    {posts.map((posts: {title: string, href: string, _id: string, previewimage: any, content: any,}) => {
 
+      
       const content = posts.content.map((data) => {
         return data.children.map((data) => data.text)
       }) // maybe re-write this
