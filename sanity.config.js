@@ -1,7 +1,7 @@
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
 import { visionTool } from '@sanity/vision'
-import { schemaTypes } from '../xavierfenton24/xavierportfoliocontent/schemas'
+import { schemaTypes } from './xavierportfoliocontent/schemas'
 
 export default defineConfig({
   name: 'default',
