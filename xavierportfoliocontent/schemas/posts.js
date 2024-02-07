@@ -25,6 +25,12 @@ export default {
       title: 'PreviewImage',
     },
     {
+      name: 'notes',
+      type: 'string',
+      title: 'Notes',
+      description: 'Notes on project',
+    },
+    {
       title: 'Content',
       name: 'content',
       type: 'array',
